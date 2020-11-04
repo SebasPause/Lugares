@@ -1,42 +1,26 @@
-package com.example.mislugares.presentacion;
+package com.example.mislugares.modelo;
 
 import java.io.File;
 import java.sql.Date;
 
 public class Lugar {
-    String nombre, direccion, geopunto, url, comentario;
-    File foto;
-    int telefono;
-    Date fecha;
-    Float valoracion;
+    private String nombre, direccion, url, comentario,foto;
+    private Geopunto posicion;
+    private int telefono;
+    private long fecha;
+    private Float valoracion;
 
-    @Override
-    public String toString() {
-        return "Lugar{" +
-                "nombre='" + nombre + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", geopunto='" + geopunto + '\'' +
-                ", url='" + url + '\'' +
-                ", comentario='" + comentario + '\'' +
-                ", foto=" + foto +
-                ", telefono=" + telefono +
-                ", fecha=" + fecha +
-                ", valoracion=" + valoracion +
-                '}';
-    }
-
-    public Lugar(String nombre, String direccion, String geopunto, String url, String comentario, File foto, int telefono,
-                 Date fecha, Float valoracion){
+    public Lugar(String nombre, String direccion, double longitud, double latitud, int telefono, String url, String comentario, Float valoracion){
         this.nombre = nombre;
         this.direccion = direccion;
-        this.geopunto = geopunto;
+        fecha = System.currentTimeMillis();
+        posicion = new Geopunto(longitud,latitud);
         this.url = url;
         this.comentario = comentario;
-        this.foto = foto;
         this.telefono = telefono;
-        this.fecha = fecha;
         this.valoracion = valoracion;
     }
+
 
     public String getNombre() {
         return nombre;
@@ -52,14 +36,6 @@ public class Lugar {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    public String getGeopunto() {
-        return geopunto;
-    }
-
-    public void setGeopunto(String geopunto) {
-        this.geopunto = geopunto;
     }
 
     public String getUrl() {
@@ -78,12 +54,20 @@ public class Lugar {
         this.comentario = comentario;
     }
 
-    public File getFoto() {
+    public String getFoto() {
         return foto;
     }
 
-    public void setFoto(File foto) {
+    public void setFoto(String foto) {
         this.foto = foto;
+    }
+
+    public Geopunto getPosicion() {
+        return posicion;
+    }
+
+    public void setPosicion(Geopunto posicion) {
+        this.posicion = posicion;
     }
 
     public int getTelefono() {
@@ -94,11 +78,11 @@ public class Lugar {
         this.telefono = telefono;
     }
 
-    public Date getFecha() {
+    public long getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(long fecha) {
         this.fecha = fecha;
     }
 
@@ -109,6 +93,5 @@ public class Lugar {
     public void setValoracion(Float valoracion) {
         this.valoracion = valoracion;
     }
-
 
 }
