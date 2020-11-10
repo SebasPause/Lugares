@@ -1,5 +1,6 @@
 package com.example.mislugares.presentacion;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.example.mislugares.R;
@@ -10,6 +11,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        PreferenceManager.setDefaultValues(this,R.xml.main_preferences,true);
+        loadPreferences();
     }
 
     @Override
@@ -55,4 +60,10 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public void loadPreferences(){
+        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+    }
+
+
 }
