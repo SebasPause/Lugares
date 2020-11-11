@@ -15,8 +15,17 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText editText;
+    float textSize;
+    boolean boldStyle;
+    boolean italicStyle;
+    String textColor;
+    String backgroundColor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

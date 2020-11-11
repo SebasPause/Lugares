@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:title="Fuente">
+        <EditTextPreference
+            android:key="textSize"
+            android:title="Tamaño de fuente"
+            android:inputType="number"
+            android:dialogTitle="Escriba el tamaño de la fuente"
+            android:summary="Cambiar el tamaño de la fuente"
+            android:defaultValue="14"
+            android:selectAllOnFocus="true"
+            />
+        <CheckBoxPreference
+            android:key="boldStyle"
+            android:title="Negrita"
+            android:summary="Mostrar letras en negrita"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+            android:key="italicStyle"
+            android:title="Cursiva"
+            android:summary="Mostrar letras en cursiva"
+            android:defaultValue="false"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Colores">
+
+        <ListPreference
+            android:key="textColor"
+            android:title="Color del texto"
+            android:entries="@array/colores_spinner"
+            android:entryValues="@array/colores_spinner"
+            android:defaultValue="Negro"/>
+
+        <ListPreference
+            android:key="backgroundColor"
+            android:title="Color de fondo"
+            android:entries="@array/colores_spinner"
+            android:entryValues="@array/colores_spinner"
+            android:defaultValue="Blanco"/>
+    </PreferenceCategory>
 </PreferenceScreen>

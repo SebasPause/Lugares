@@ -5,4 +5,17 @@
     <string name="btnPreferencias">Preferencias</string>
     <string name="btnAcerca">Acerca De</string>
     <string name="btnSalir">Salir</string>
+    <string-array name="colores_spinner">
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Azul</item>
+        <item>Marron</item>
+        <item>Verde</item>
+        <item>Gris</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Morado</item>
+        <item>Rosa</item>
+        <item>Rojo</item>
+    </string-array>
 </resources>
