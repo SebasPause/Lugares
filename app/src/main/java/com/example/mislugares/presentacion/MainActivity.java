@@ -1,5 +1,6 @@
 package com.example.mislugares.presentacion;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -45,8 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        PreferenceManager.setDefaultValues(this,R.xml.main_preferences,true);
-        loadPreferences();
+
     }
 
     @Override
@@ -65,9 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void lanzarPreferencias(View view){
+        Intent intent = new Intent(this,PreferenciasActivity.class);
+        startActivity(intent);
     }
 
     public void loadPreferences(){

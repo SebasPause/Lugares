@@ -8,4 +8,11 @@
         android:singleLine="true"
         android:title="Maximo de lugares a mostrar"
         android:summary="Limita en número de valores que se muestran" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/listaCriterios_entries"
+        android:entryValues="@array/listaCriterios_values"
+        android:key="ListaCriterios"
+        android:title="Criterio de ordenación"
+        android:summary="Qué lugares quieres que aparezcan antes" />
 </PreferenceScreen>
