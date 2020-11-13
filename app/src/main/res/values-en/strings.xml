@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Places</string>
-    <string name="action_settings">Show Places</string>
+    <string name="action_settings">Preferences</string>
     <string name="btnMisLugares">My Places</string>
     <string name="btnPreferencias">Preferences</string>
     <string name="btnAcerca">About that...</string>
