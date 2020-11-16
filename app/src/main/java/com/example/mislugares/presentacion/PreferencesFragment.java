@@ -19,12 +19,4 @@ public class PreferencesFragment extends PreferenceFragmentCompat {
     public void onCreatePreferences(Bundle savedInstanceState,String rootKey) {
         setPreferencesFromResource(R.xml.main_preferences,rootKey);
     }
-
-    @SuppressLint("ResourceType")
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.xml.main_preferences,container,false);
-    }
-
-
 }
