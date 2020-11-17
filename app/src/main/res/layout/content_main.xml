@@ -33,12 +33,14 @@
             android:id="@+id/btn_Acerca_de"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="lanzarAcercaDe"
             android:text="@string/btnAcerca" />
 
         <Button
             android:id="@+id/btn_Salir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="finish"
             android:text="@string/btnSalir" />
 
     </LinearLayout>

@@ -2,7 +2,6 @@ package com.example.mislugares.presentacion;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -16,12 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 
+import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.EditText;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -65,13 +64,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
+    //Menu
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -84,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
             lanzarPreferencias(null);
             return true;
         }
+        if (id == R.id.btn_Acerca_de) {
+            lanzarAcercaDe(null);
+            return true;
+        }
+        if (id == R.id.btn_Salir) {
+            finish();
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -91,6 +99,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,PreferenciasActivity.class);
         startActivity(intent);
         loadPreferences();
+    }
+
+    public void lanzarAcercaDe(View view){
+        Intent intent = new Intent(this, AcercaDe.class);
+        startActivity(intent);
+    }
+
+    public void finish(View view) {
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);
     }
 
     public void loadPreferences(){

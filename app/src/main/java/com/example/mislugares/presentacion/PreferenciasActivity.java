@@ -19,11 +19,14 @@ import com.example.mislugares.R;
 
 import java.util.List;
 
-public class PreferenciasActivity extends PreferenceActivity {
+public class PreferenciasActivity extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.main_preferences);
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(android.R.id.content,new PreferencesFragment())
+                .commit();
 
     }
 
