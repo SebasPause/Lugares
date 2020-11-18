@@ -9,8 +9,12 @@ public class Lugar {
     private int telefono;
     private long fecha;
     private Float valoracion;
+    private TipoLugar tipo;
 
-    public Lugar(String nombre, String direccion, double longitud, double latitud, int telefono, String url, String comentario, Float valoracion){
+    public Lugar(){}
+
+
+    public Lugar(String nombre, String direccion, double longitud, double latitud, int telefono, String url, String comentario, Float valoracion,TipoLugar tipo){
         this.nombre = nombre;
         this.direccion = direccion;
         fecha = System.currentTimeMillis();
@@ -19,6 +23,7 @@ public class Lugar {
         this.comentario = comentario;
         this.telefono = telefono;
         this.valoracion = valoracion;
+        this.tipo = tipo;
     }
 
 

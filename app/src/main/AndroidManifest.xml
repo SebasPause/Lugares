@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MisLugares">
-        <activity android:name=".presentacion.AcercaDe"></activity>
+        <activity android:name=".modelo.VistaLugares"></activity>
+        <activity
+            android:name=".presentacion.AcercaDe"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
         <activity android:name=".presentacion.PreferenciasActivity" />
         <activity
             android:name=".presentacion.MainActivity"

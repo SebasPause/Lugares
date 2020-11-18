@@ -12,13 +12,19 @@
         android:orderInCategory="10"
         android:id="@+id/btn_Acerca_de"
         android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="ifRoom|withText"
+        />
+    <item
+        android:title="Lugares"
+        android:orderInCategory="15"
+        android:id="@+id/btn_MisLugares"
         app:showAsAction="never"
         />
     <item
         android:title="Buscar"
         android:icon="@android:drawable/ic_menu_search"
         android:orderInCategory="115"
-        app:showAsAction="always"
+        app:showAsAction="always|collapseActionView"
         />
     <item
         android:title="Mapa"

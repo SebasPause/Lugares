@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 
 import com.example.mislugares.R;
+import com.example.mislugares.modelo.VistaLugares;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -15,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 
-import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Menu;
@@ -92,6 +92,9 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.btn_Salir) {
             finish();
         }
+        if (id == R.id.btn_MisLugares) {
+            lanzarLugares(null);
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -103,6 +106,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void lanzarAcercaDe(View view){
         Intent intent = new Intent(this, AcercaDe.class);
+        startActivity(intent);
+    }
+
+    public void lanzarLugares(View view){
+        Intent intent = new Intent(this, VistaLugares.class);
         startActivity(intent);
     }
 
