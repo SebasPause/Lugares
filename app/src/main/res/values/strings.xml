@@ -5,6 +5,22 @@
     <string name="btnPreferencias">Preferencias</string>
     <string name="btnAcerca">Acerca De</string>
     <string name="btnSalir">Salir</string>
+    <string name="txtNombre">Nombre:</string>
+    <string name="txtTipo">Tipo:</string>
+    <string name="txtDireccion">Direccion:</string>
+    <string name="txtTelefono">Telefono:</string>
+    <string name="txtUrl">Url:</string>
+    <string name="txtComentario">Comentario:</string>
+    <!-- Activity vista lugares -->
+    <string name="txtTituloLugar">Nombres del lugar</string>
+    <string name="txtTipoLugar">tipo del lugar</string>
+    <string name="txtDireccionLugar">direccion</string>
+    <string name="txtTelefonoLugar">telefono</string>
+    <string name="txtUrlLugar">url</string>
+    <string name="txtComentarioLugar">comentario</string>
+    <string name="txtFechaLugar">fecha</string>
+    <string name="txtHoraLugar">hora</string>
+
     <string-array name="colores_spinner">
         <item>Negro</item>
         <item>Blanco</item>

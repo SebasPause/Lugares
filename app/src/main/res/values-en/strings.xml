@@ -6,4 +6,19 @@
     <string name="btnPreferencias">Preferences</string>
     <string name="btnAcerca">About that...</string>
     <string name="btnSalir">Exit</string>
+    <string name="txtNombre">Name:</string>
+    <string name="txtTipo">Kind:</string>
+    <string name="txtDireccion">Address:</string>
+    <string name="txtTelefono">Telephone:</string>
+    <string name="txtUrl">Url:</string>
+    <string name="txtComentario">Commentary:</string>
+    <!-- Activity vista lugares -->
+    <string name="txtTituloLugar">place names</string>
+    <string name="txtTipoLugar">place guy</string>
+    <string name="txtDireccionLugar">address</string>
+    <string name="txtTelefonoLugar">telephone</string>
+    <string name="txtUrlLugar">url</string>
+    <string name="txtComentarioLugar">comments</string>
+    <string name="txtFechaLugar">date</string>
+    <string name="txtHoraLugar">hour</string>
 </resources>
