@@ -11,7 +11,6 @@
         android:theme="@style/Theme.MisLugares">
         <activity android:name=".presentacion.VistaLugarActivity"></activity>
         <activity android:name=".presentacion.EdicionLugarActivity" />
-        <activity android:name=".modelo.VistaLugares" />
         <activity
             android:name=".presentacion.AcercaDe"
             android:theme="@style/Theme.AppCompat.Light.Dialog" />

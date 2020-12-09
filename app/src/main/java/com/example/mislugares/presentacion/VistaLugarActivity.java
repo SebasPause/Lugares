@@ -9,23 +9,30 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.mislugares.R;
+import com.example.mislugares.casosdeuso.CasosUsoLugar;
 
 public class VistaLugarActivity extends AppCompatActivity {
+
+    private CasosUsoLugar casosUsoLugar;
+    private int pos;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_lugares);
+
+        Bundle extras = getIntent().getExtras();
+        pos = extras.getInt("pos");
+
     }
 
-    //MENU
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.vista_lugar,menu);
+    public boolean onCreateOptionsMenu(Menu m){
+        getMenuInflater().inflate(R.menu.vista_lugar,m);
         return true;
     }
 
-    //Menu
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -34,6 +41,9 @@ public class VistaLugarActivity extends AppCompatActivity {
         if (id == R.id.menu_editar) {
             lanzarEditar(null);
             return true;
+        }
+        if(id == R.id.menu_borrar){
+            casosUsoLugar.borrar(pos);
         }
         return super.onOptionsItemSelected(item);
     }
