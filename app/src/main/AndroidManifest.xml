@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MisLugares">
-        <activity android:name=".presentacion.VistaLugarActivity"></activity>
+        <activity android:name=".modelo.ListaLugaresActivity"></activity>
+        <activity android:name=".presentacion.VistaLugarActivity" />
         <activity android:name=".presentacion.EdicionLugarActivity" />
         <activity
             android:name=".presentacion.AcercaDe"
