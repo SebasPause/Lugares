@@ -2,11 +2,13 @@ package com.example.mislugares.modelo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ListActivity;
 import android.os.Bundle;
 
 import com.example.mislugares.R;
+import com.example.mislugares.datos.AdaptadorLugares;
 
-public class ListaLugaresActivity extends AppCompatActivity {
+public class ListaLugaresActivity extends ListActivity {
 
     public AdaptadorLugares adaptador;
 

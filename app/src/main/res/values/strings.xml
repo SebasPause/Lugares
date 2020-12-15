@@ -11,6 +11,7 @@
     <string name="txtTelefono">Telefono:</string>
     <string name="txtUrl">Url:</string>
     <string name="txtComentario">Comentario:</string>
+
     <!-- Activity vista lugares -->
     <string name="txtTituloLugar">Nombres del lugar</string>
     <string name="txtTipoLugar">tipo del lugar</string>
@@ -20,6 +21,12 @@
     <string name="txtComentarioLugar">comentario</string>
     <string name="txtFechaLugar">fecha</string>
     <string name="txtHoraLugar">hora</string>
+
+    <!-- Layout elemento lista -->
+    <string name="nombre_elemento">Nombre del lugar</string>
+    <string name="direccion_elemento">Direccion del lugar</string>
+    <string name="foto_elemento">lugar</string>
+
 
     <string-array name="colores_spinner">
         <item>Negro</item>

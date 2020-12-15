@@ -90,9 +90,11 @@ public class MainActivity extends AppCompatActivity {
         }
         if (id == R.id.btn_Salir) {
             finish();
+            return true;
         }
         if (id == R.id.btn_MisLugares) {
             lanzarLugares(null);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
