@@ -1,6 +1,5 @@
 package com.example.mislugares.modelo;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -16,5 +15,7 @@ public class ListaLugaresActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_lugares);
+        adaptador = new AdaptadorLugares(this);
+        setListAdapter(adaptador);
     }
 }

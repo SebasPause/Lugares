@@ -14,7 +14,15 @@ public class Lugar {
     public Lugar(){}
 
 
-    public Lugar(String nombre, String direccion, double longitud, double latitud, int telefono, String url, String comentario, Float valoracion,TipoLugar tipo){
+    public TipoLugar getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoLugar tipo) {
+        this.tipo = tipo;
+    }
+
+    public Lugar(String nombre, String direccion, double longitud, double latitud, int telefono, String url, String comentario, Float valoracion, TipoLugar tipo){
         this.nombre = nombre;
         this.direccion = direccion;
         fecha = System.currentTimeMillis();

@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 
 import com.example.mislugares.R;
+import com.example.mislugares.modelo.ListaLugaresActivity;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -111,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lanzarLugares(View view){
-        Intent intent = new Intent(this, VistaLugarActivity.class);
+        Intent intent = new Intent(this, ListaLugaresActivity.class);
         startActivity(intent);
     }
 

@@ -40,7 +40,7 @@ public class LugaresLista implements RepositorioLugares{
 
     @Override
     public int tamanio() {
-        return 0;
+        return listaLugares.size();
     }
 
     @Override
